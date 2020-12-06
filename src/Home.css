@@ -1,0 +1,10 @@
+.home{
+    margin-top: 80px;
+}
+
+
+.card-section{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}

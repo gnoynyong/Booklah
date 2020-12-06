@@ -1,0 +1,73 @@
+.result{
+    display: flex;
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+.result > img:hover{
+    opacity: 0.8;
+}
+
+.result > img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.result-info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.result-info > h6{
+    margin-top: -180px;
+    font-size: 20px;
+    font-weight: 680px;
+}
+
+.result-info > h7{
+    margin-top: -10px;
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+.open{
+    font-size: 17px;
+    color: rgb(23, 250, 23);
+    font-weight: 550px;
+}
+
+.close{
+    font-size: 17px;
+    color: rgb(247, 35, 35);
+    font-weight: 550px;
+}
+
+.result-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1500px;
+}
+
+.result-bottom > h8{
+    font-size: 20px;
+    font-weight: 680px;
+}
+
+.result-bottom > button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 182);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.result-bottom > button:hover{
+    background-color: rgb(6, 6, 88);
+}

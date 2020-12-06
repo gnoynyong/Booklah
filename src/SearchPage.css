@@ -1,0 +1,19 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.search > h1{
+    color: rgb(40, 40, 236);
+    font-size: 60px;
+}
+
+.search > h2{
+    font-size: 40px;
+    color: black;
+    margin-left: -1500px;
+}
+.result{
+    display: flex;
+    flex-direction: column;
+}
