@@ -1,17 +1,23 @@
-import firebase from "firebase/app"
-import "firebase/auth"
+import firebase from "firebase/app";
+import 'firebase/storage';
+import 'firebase/firestore';
 
 
-//initialize firebase 
-const app = firebase.initializeApp({
-    apikey: process.env.REACT_FIREBASE_API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    databaseURL: process.env.DATABASE_URL,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
-    appId: process.env.APP_ID
-})
+var firebaseConfig = {
+    apiKey: "AIzaSyCxtx2ZxZInzN7bFVrOIzouvTVfj2F-CSg",
+    authDomain: "booklah-db050.firebaseapp.com",
+    databaseURL: "https://booklah-db050.firebaseio.com",
+    projectId: "booklah-db050",
+    storageBucket: "booklah-db050.appspot.com",
+    messagingSenderId: "143847281917",
+    appId: "1:143847281917:web:d2c01ac244bb4fab965a94"
+  };
 
-export const auth = app.auth()
-export default app
+firebase.initializeApp(firebaseConfig);
+
+
+//initialize firebase db
+const booklahStorage = firebase.storage();
+const booklahfirestore = firebase.firestore();
+
+export {booklahStorage,booklahfirestore};

@@ -5,7 +5,6 @@ import Search from './Search';
 import SignUp from './SignUp';
 import Home from './Home';
 import SearchPage from './SearchPage';
-import "bootstrap/dist/css/bootstrap.min.css"
 /*import {useLoadScript} from "@react-google-maps/api";
 
 const libraries = ["places"];*/

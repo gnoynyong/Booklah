@@ -6,8 +6,13 @@ function SearchResult({
         name,
         address,
         openNow,
-        price
+        price,
+        courtID,
+        setSelectedCourt
     }) {
+        function openModal(courtID){
+
+        }
         return (
             <div className="result">
                 <img src={img} alt="court"/>
@@ -24,7 +29,7 @@ function SearchResult({
                 </div>
                 <div className="result-bottom">
                     <h8>{price}</h8>
-                    <button className="btn-book">Book!</button>
+                    <button className="btn-book" onClick={()=> setSelectedCourt(courtID)}>Book!</button>
                 </div>
             </div>
         )
